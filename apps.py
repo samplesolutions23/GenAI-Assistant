@@ -42,7 +42,7 @@ def create_s3_client():
     return s3_client
 
 if s3_bucket == '':
-    st.error('Please update the Amazon S3 bucket name in summary.py file at line 299. This S3 bucket will be used to store document which you upload for summary and chatting. ')
+    st.error('Please update the Amazon S3 bucket name. This S3 bucket will be used to store document which you upload for summary and chatting. ')
     st.stop()
 
 
