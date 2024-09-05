@@ -18,10 +18,10 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 
 
-ACCESS_KEY = os.getenv("ACCESS_KEY")
-SECRET_KEY = os.getenv("SECRET_KEY")
-region = os.getenv("region")
-s3_bucket = env.s3_bucket_name
+ACCESS_KEY = st.secrets["ACCESS_KEY"]
+SECRET_KEY = st.secrets["SECRET_ACCESS_KEY"]
+region = st.secrets["region"]
+s3_bucket = st.secrets["S3_BUCKET"]
 session = boto3.Session(region_name=region,aws_access_key_id=ACCESS_KEY,aws_secret_access_key=SECRET_KEY)
 
 def create_beddrock_client():
