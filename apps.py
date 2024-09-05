@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 from transformers import pipeline
 from bs4 import BeautifulSoup
 from contextlib import closing
-from streamlit_pdf_viewer import pdf_viewer
+#from streamlit_pdf_viewer import pdf_viewer
 import streamlit as st
 from langchain_community.chat_models import BedrockChat
 from langchain.prompts import PromptTemplate
