@@ -1,0 +1,13 @@
+boto3
+utils
+langchain
+langchain_community
+bs4
+requests
+streamlit==1.27.1
+youtube_transcript_api==0.6.1
+nltk==3.8.1
+sentence_transformers
+faiss-cpu
+s3fs
+st-files-connection
