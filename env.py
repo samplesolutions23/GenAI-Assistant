@@ -1,1 +1,1 @@
-s3_bucket_name = 'dmstable'
+s3_bucket_name = ''
