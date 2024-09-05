@@ -20,7 +20,7 @@ from langchain.chains import ConversationChain
 
 ACCESS_KEY = st.secrets["ACCESS_KEY"]
 SECRET_KEY = st.secrets["SECRET_ACCESS_KEY"]
-region = st.secrets["region"]
+region = st.secrets["AWS_REGION"]
 s3_bucket = st.secrets["S3_BUCKET"]
 session = boto3.Session(region_name=region,aws_access_key_id=ACCESS_KEY,aws_secret_access_key=SECRET_KEY)
 
