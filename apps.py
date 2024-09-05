@@ -43,7 +43,7 @@ def create_s3_client():
 
 if s3_bucket == '':
     st.error('Please update the Amazon S3 bucket name. This S3 bucket will be used to store document which you upload for summary and chatting. ')
-    st.stop()
+    
 
 
 def upload_to_s3(file):
