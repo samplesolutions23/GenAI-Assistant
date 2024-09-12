@@ -21,7 +21,7 @@ def submit():
     st.session_state.user_input = ""
 
 
-with st.container(border=True):
+with st.container():
     inputs, pdfs = st.tabs(["Enter URL", "Upload pdf"])
     with inputs:
         st.text_input(":Gray[Enter URL of a blog post or YouTube video to generate summary ]",placeholder="https://www.youtube.com/watch?v=RfvL_423a-I", key="user_input", on_change=submit)
