@@ -55,8 +55,9 @@ def upload_to_s3(file):
             result_pdf = pdf_text(s3_bucket,file.name)
 
         return result_pdf 
-    except:
-        return 'err'
+    except Exception as e :
+            st.write(e)
+            return 'err'
 
 
 
