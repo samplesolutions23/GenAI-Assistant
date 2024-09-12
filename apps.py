@@ -56,7 +56,6 @@ def upload_to_s3(file):
 
         return result_pdf 
     except Exception as e :
-            st.write(e)
             return 'err'
 
 
