@@ -83,7 +83,7 @@ def generate_summary(url):
 
     except Exception as e:
         st.error('Unable to retrive details for given URL, please refresh & try again.')
-        #st.error(e)
+        st.error(e)
         st.stop()
     st.session_state.response=response["response"]
     st.session_state.v_id=v_id
