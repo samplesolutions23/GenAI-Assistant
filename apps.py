@@ -4,7 +4,6 @@ import time
 import re
 import os
 import requests
-import env
 from youtube_transcript_api import YouTubeTranscriptApi
 from urllib.parse import urlparse
 from transformers import pipeline
